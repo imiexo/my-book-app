@@ -1,10 +1,9 @@
-import { Image } from 'expo-image';
-import { Platform, StyleSheet, ScrollView, Button  } from 'react-native';
+import { ScrollView, StyleSheet } from 'react-native';
 
 import { HelloWave } from '@/components/HelloWave';
-import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+
 
 export default function HomeScreen() {
   return (
@@ -35,3 +34,4 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
 });
+
