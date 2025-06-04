@@ -7,7 +7,9 @@ import { IconSymbol } from '@/components/ui/IconSymbol';
 import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
+import Fontisto from '@expo/vector-icons/Fontisto';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -50,6 +52,25 @@ export default function TabLayout() {
         ),
       }}
       />
+      <Tabs.Screen
+      name="RemoteAPI"
+      options={{
+        title: 'User Info',
+        tabBarIcon: ({ color }) => (
+          <FontAwesome5 name="users" size={24} color="black" />
+        ),
+      }}
+      />
+      <Tabs.Screen
+      name="emailCompany"
+      options={{
+        title: 'Company and Contact Info',
+        tabBarIcon: ( { color }) => (
+          <Fontisto name="email" size={24} color="black" />
+          )
+      }}
+      />
+
     </Tabs>
   );
 }
